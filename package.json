@@ -1,10 +1,9 @@
 {
   "name": "static-web-site",
   "version": "1.0.0",
-  "description": "This action prints \"Hello World\" or \"Hello\" + the name of a person to greet to the log.",
   "main": "index.js",
   "scripts": {
-    "build": "ncc build ./index.js -o dist --license licenses.txt",
+    "build": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,12 +16,5 @@
   "bugs": {
     "url": "https://github.com/servetti-polito/static-web-site/issues"
   },
-  "homepage": "https://github.com/servetti-polito/static-web-site#readme",
-  "dependencies": {
-    "@actions/core": "^1.8.2",
-    "@actions/github": "^5.0.3"
-  },
-  "devDependencies": {
-    "@vercel/ncc": "^0.33.4"
-  }
+  "homepage": "https://github.com/servetti-polito/static-web-site#readme"
 }
